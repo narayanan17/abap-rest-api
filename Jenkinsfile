@@ -7,7 +7,7 @@ node {
 	def COVERAGE = 80
 	
     stage('Preparation') {
-        deleteDir()
+        
         git poll: true, branch: 'master', url:'https://github.com/pacroy/abap-rest-api.git'
 		dir('sap-pipeline') {
 			bat "git clone https://github.com/pacroy/abap-ci-postman.git ."
