@@ -10,9 +10,9 @@ def VARIANT = "DEFAULT"
 parallel (
     "NPL":{
         node {
-        	def LABEL = "NPL"
+        	def LABEL = "NLP"
         	def HOST = "35.198.221.198"
-        	def CREDENTIAL = "NPL"
+        	def CREDENTIAL = "NLP"
         	
         	git poll: true, branch: BRANCH, url: GITURL
         		
@@ -30,11 +30,11 @@ parallel (
         }
     }
     /* Add more system as needed...
-	,"NPL":{
+	,"NLP":{
         node {
-        	def LABEL = "NPL"
+        	def LABEL = "NLP"
         	def HOST = "35.198.221.198"
-        	def CREDENTIAL = "NPL"
+        	def CREDENTIAL = "NLP"
         	
         	git poll: true, branch: BRANCH, url: GITURL
         		
