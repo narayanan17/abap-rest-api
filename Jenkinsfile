@@ -1,7 +1,7 @@
 import jenkins.model.*
 
 node {
-	def HOST = "vhcalnplci.dummy.nodomain"
+	def HOST = "35.198.221.198"
 	def CREDENTIAL = "NPL"
 	def PACKAGE = '''$REST_SIMPLE'''
 	def COVERAGE = 80
